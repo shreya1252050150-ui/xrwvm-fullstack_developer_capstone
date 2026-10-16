@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Best Cars Dealership</title>
+
+    <!-- Required CSS files -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #263238;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #142b4a;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            margin-left: 12px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #ffc107 !important;
+            font-weight: bold;
+            border-bottom: 2px solid #ffc107;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #142b4a, #2874a6);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .contact-section {
+            padding: 45px 0;
+        }
+
+        .contact-card {
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            color: #1c5d87;
+            font-size: 23px;
+            margin-bottom: 18px;
+        }
+
+        .contact-card p {
+            line-height: 1.7;
+        }
+
+        .contact-card a {
+            color: #1769aa;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .message-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            margin-top: 15px;
+        }
+
+        .message-section h2 {
+            color: #142b4a;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #142b4a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .contact-section {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Best Cars Dealership</a>
+
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="/contact/"
+                       aria-current="page">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="mb-0">
+                Have questions? Our team is here to help you find your perfect car.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Information -->
+    <main class="container contact-section">
+
+        <div class="row">
+
+            <!-- Address -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center">
+                    <div class="contact-icon">📍</div>
+                    <h3>Visit Our Showroom</h3>
+
+                    <p>
+                        <strong>Best Cars Dealership</strong>
+                    </p>
+
+                    <p>
+                        123 Auto Avenue,<br>
+                        Pune, Maharashtra 411001
+                    </p>
+
+                    <p>
+                        Monday–Saturday<br>
+                        9:00 AM – 6:00 PM
+                    </p>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+
+                    <p>
+                        Our sales and customer support team
+                        is ready to assist you.
+                    </p>
+
+                    <p>
+                        <a href="tel:+912055501234">
+                            +91 20 5550 1234
+                        </a>
+                    </p>
+
+                    <p>
+                        Call us for vehicle enquiries,
+                        test drives and dealership services.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Us</h3>
+
+                    <p>
+                        Have a question about our vehicles
+                        or services? Send us an email.
+                    </p>
+
+                    <p>
+                        <a href="mailto:contact@example.com">
+                            contact@example.com
+                        </a>
+                    </p>
+
+                    <p>
+                        We aim to respond within two business days.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Additional Information -->
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <section class="message-section text-center">
+                    <h2>How Can We Help You?</h2>
+
+                    <p class="mt-3">
+                        At Best Cars Dealership, we aim to make
+                        your car-buying experience simple and convenient.
+                        Our team can help you explore available vehicles,
+                        arrange a test drive and answer questions about
+                        our dealership services.
+                    </p>
+
+                    <p>
+                        Visit our showroom, give us a call or email us.
+                        We look forward to assisting you!
+                    </p>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-0">
+            &copy; 2026 Best Cars Dealership. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript for responsive navigation -->
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+
+</body>
+</html>
